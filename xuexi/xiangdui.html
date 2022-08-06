@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接</title>
+    <style>
+        tr .ad{
+            color: chartreuse;
+            font-size: 50;
+            font-style: italic;
+            
+        }
+        
+
+        /* 没有被访问的超链接 */
+        a:link{
+            color: black;
+        }
+
+        /* 被访问过得超链接 */
+        a:visited{
+            color: bisque;
+        }
+
+
+        /* 悬停的超链接 */
+        a:hover{
+            color: blueviolet;
+        }
+
+
+        /* 点击中的超链接 */
+        a:active{
+            font-size: 40;
+            background-color: aqua;
+        }
+
+
+        a::after{
+            content: "☆";
+        }
+        a::before{
+            content: "54188";
+        }
+        .box li{
+            color: red;
+        }
+        .box li.axs{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <a href="../wuxuebiao.html" title="真表现出">哈哈哈哈哈</a>
+
+    <!-- 网页的头部 -->
+    <header>
+        <div class="logo">网页的logo</div>
+        <nav>导航条</nav>
+
+    </header>
+
+    <!-- 网页的核心 -->
+    <main>
+        <!-- 广告 -->
+        <aside>我是广告</aside>
+        
+        <!-- 网页的文章 -->
+        <article>
+            <h1>标题</h1>
+            <section>部分</section>
+            <section>部分</section>
+            <section>部分</section>
+            <section>部分</section>
+        </article>
+
+    </main>
+
+    <!-- 网页的页脚 -->
+    <footer>
+
+        <a href="www.baidu.com">前往百度</a>
+
+
+    </footer>
+
+
+
+
+
+    <table border="1" whith="400">
+        <caption>biaoti</caption>
+        <tr class="tr1">
+            <th>awd</th>
+            <th>wda</th>
+            <th class="ad">wad</th>
+            <th>wad</th>
+        </tr>
+        <tr class="tr2">
+            <td>asda</td>
+            <td>wad</td>
+            <td>wad1</td>
+            <td>dwad</td>
+        </tr>
+        <tr>
+            <td>daw</td>
+            <td>wdaw</td>
+            <td>daw</td>
+            <td>wdaaw</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+    <ul class="box">
+        <li>段落</li>
+        <li>段落</li>
+        <li class="axs">段落</li>
+        <li>段落</li>
+        <li>段落</li>
+    </ul>
+</body>
+</html>

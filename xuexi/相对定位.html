@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            }
+
+        nav {
+            width: 800px;
+            height: 40px;
+            background-color: antiquewhite;
+            margin: 40px auto;
+            }
+        nav ul{
+            list-style: none;
+            /* 去掉小圆点 */
+        }
+        nav ul li {
+            float: left;
+            width: 100px;
+            line-height: 40px;
+            text-align: center;
+           
+            }
+        nav ul li a {
+            display: block;
+            width: 100px;
+            height: 40px;
+            background-color: black;
+            color: white;
+
+            text-decoration: none;
+
+        }
+        nav ul li a:hover {
+            border-top: 3px red solid;
+            position: relative;
+            top: -3px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+            <li><a href="">网站栏目</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .lun{
+            width: 423px;
+            height: 328px;
+            margin: 40px auto;
+            border: 1px solid #000;
+            position: relative;
+        }
+        .lun .btn1 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000;
+
+            left: 10px;
+            top: 50%;
+            margin-top: -20px;
+            
+
+            /* 圆形 */
+            border-radius: 50%;
+
+            text-align: center;
+            line-height: 40px;
+            background-color: rgba(255,255, 255, 1);
+
+            /* 鼠标为小手状 */
+            cursor: pointer;
+
+
+        }
+        .lun .btn2 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000;
+
+            right: 10px;
+            top: 50%;
+            margin-top: -20px;
+
+            /* 圆形 */
+            border-radius: 50%;
+
+            text-align: center;
+            line-height: 40px;
+            background-color: rgba(255,255, 255, 1);
+
+            cursor: pointer;
+
+
+        }
+        .lun a:hover{
+            color: red;
+            background-color: aquamarine;
+        }
+        .lun ol{
+            position: absolute;
+            width: 90px;
+            height: 20px;
+           /*  background-color: #FFF; */
+            right: 13px;
+            bottom: 9px;
+            list-style: none;
+        }
+        .lun ol li {
+            float: left;
+            width: 15px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 5);
+
+            border-radius: 50%;
+
+            margin-right: 10px;
+        }
+        .lun ol li:last-child{
+            margin: 0;
+            
+        }
+
+        .lun ol .ed {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="lun">
+        <img src="../image/dongtai.png" alt="">
+        <a href="#" class="btn1">&lt;</a>
+        <a href="#" class="btn2">&gt;</a>
+        <ol>
+            
+            <li></li>
+            <li></li>
+            <li class="ed"></li>
+            <li></li>
+        </ol>
+
+    </div>
+</body>
+</html>
